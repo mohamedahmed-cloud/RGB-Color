@@ -24,7 +24,7 @@ body {
 /* name */
 .name {
     font-family: 'Cairo', sans-serif;
-    font-size:max(2.5vw,25px);
+    font-size:35px;
     font-weight: 700;
     color:rgb(122,122,122);
     margin-bottom:20px;
@@ -123,7 +123,6 @@ input[type="range"]{
     justify-content:space-between;
     align-items:center;
     color:#444;
-    font-size:max(10px,1vw);
     font-family: 'Cairo', sans-serif;
 }
 .result-all {
@@ -155,4 +154,63 @@ input[type="range"]{
 }
 ::selection {
     color:gray;
+}
+@media(max-width:800px){
+    .page{
+        width:80vw;
+    }
+    .name {
+        width:80vw;
+    }
+    .red-all,
+    .green-all,
+    .blue-all{
+        width:80vw;
+    }
+    .red,
+    .green,
+    .blue{
+        width:60vw;
+    }
+    .result-all,
+    .hex,
+    .rgb {
+        width:60vw;
+    }
+}
+@media (max-width:600px){
+    .page{
+        width:94vw;
+    }
+    .name {
+        width:94vw;
+    }
+    .red-all,
+    .green-all,
+    .blue-all{
+        width:94vw;
+    }
+    .red,
+    .green,
+    .blue{
+        width:60vw;
+    }
+    .result-all,
+    .hex,
+    .rgb {
+        width:60vw;
+    }
+    .color-result,
+    .hex-color,
+    .rgb-color {
+        width:120px;
+        height:50px;
+        font-size:14px;
+    }
+    .rgb-color {
+        font-size:12px;
+    }
+    .our-result p {
+        font-size:14px;
+    }
 }
