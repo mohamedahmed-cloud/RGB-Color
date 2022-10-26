@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="rgb.png">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <p class="name">
+            <span>R</span>
+            <span>G</span>
+            <span>B</span>
+            Slider</p>
+        <div class="flex">
+            <div class="range">
+                <div class="red-all">
+                    <p>R</p>
+                    <div class="red">
+                        <input type="range" min="0" max="255" step="1" value="0">
+                    </div>
+                    <p class="change">0</p>
+                </div>
+                <div class="green-all">
+                    <p>G</p>
+                    <div class="green">
+                        <input type="range" min="0" max="255" step="1" value="0">
+                    </div>
+                    <p class="change">0</p>
+                </div>
+                <div class="blue-all">
+                    <p>B</p>
+                    <div class="blue">
+                        <input type="range" min="0" max="255" step="1" value="0">
+                    </div>
+                    <p class="change">0</p>
+                </div>
+                <!-- end of range -->
+            </div>
+            <div class="our-result">
+                <div class="result-all">
+                    <div class="result">Result</div>
+                    <div style="background-color:black" class="color-result"></div>
+                </div>
+                <div class="hex">
+                    <p>Hex Code</p>
+                    <div class="hex-color">#000000</div>
+                </div>
+                <div class="rgb">
+                    <p>RGB code</p>
+                    <div class="rgb-color">rgb(0,0,0)</div>
+                </div>
+                <!-- end of our result-->
+            </div>
+        </div>
+        <!-- end of page -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

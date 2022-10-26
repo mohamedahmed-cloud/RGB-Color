@@ -1,0 +1,158 @@
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body {
+    height:99vh;
+    background-color:#eee;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page {
+    /* background-color: black; */
+    width:50vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:20px;
+    border-radius: 20px;
+}
+/* name */
+.name {
+    font-family: 'Cairo', sans-serif;
+    font-size:max(2.5vw,25px);
+    font-weight: 700;
+    color:rgb(122,122,122);
+    margin-bottom:20px;
+    background-color:#444;
+    width:55vw;
+    border-radius: 20px;
+    text-align:center;
+}
+.name :nth-child(1) {
+    color:red
+}
+.name :nth-child(2) {
+    color:green;
+}
+.name :nth-child(3){
+    color:blue;
+}
+/* flex */
+.flex {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+/* range */
+.range {
+    display:grid;
+    height:220px;
+}
+.red-all,
+.green-all,
+.blue-all {
+    display:flex;
+    width:55vw; 
+    height:60px;
+    justify-content:space-between;
+    align-items:center;
+}
+.red,
+.green,
+.blue {
+    background-color:black;
+    width:40vw;
+    height:60px;
+    border-radius: 20px;
+    /* display */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="range"]{
+    cursor:pointer;
+}
+.red-all :nth-child(1){
+    background-color:red;
+}
+.green-all :nth-child(1) {
+    background-color:green;
+}
+.blue-all :nth-child(1) {
+    background-color:blue;
+}
+.red-all p,
+.green-all p,
+.blue-all p {
+    padding:10px 0px;
+    width:40px;
+    text-align: center;
+    border-radius:8px;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+}
+.red-all :nth-child(3) {
+    background-color:red;
+    font-family: 'Cairo', sans-serif;
+}
+.green-all :nth-child(3) {
+    background-color:green;
+    font-family: 'Cairo', sans-serif;
+}
+.blue-all :nth-child(3) {
+    background-color:blue;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* result & hex code */
+.our-result {
+    display:grid;
+    align-items:center;
+}
+.result-all,
+.hex,
+.rgb {
+    display:flex;
+    width:40vw;
+    justify-content:space-between;
+    align-items:center;
+    color:#444;
+    font-size:max(10px,1vw);
+    font-family: 'Cairo', sans-serif;
+}
+.result-all {
+    margin-bottom:10px;
+}
+.color-result {
+    width:140px;
+    height:50px;
+    border-radius: 10px;
+}
+.hex {
+    margin-bottom:10px;
+}
+.hex-color,
+.rgb-color {
+    width:140px;
+    height:50px;
+    border-radius: 10px;
+    background-color:#666;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+
+}
+.rgb,.hex {
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+}
+::selection {
+    color:gray;
+}
