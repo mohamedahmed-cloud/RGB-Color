@@ -31,9 +31,9 @@ red.oninput = (e) => {
     redValue.innerHTML=value
     hex1=parseInt(value,10).toString(16);
     rgb1=parseInt(value,10)
-    if(hex1==0) hex1="00"
-    if(hex2==0) hex2="00"
-    if (hex3==0) hex3="00"
+    if(hex1.length<2) hex1="00"
+    if(hex2.length<2) hex2="00"
+    if (hex3.length<2) hex3="00"
     mainResult.style.backgroundColor=`#${hex1}${hex2}${hex3}`
     rColor.style.backgroundColor=`#${hex1}0000`
     HEXRsult.innerHTML=`#${hex1}${hex2}${hex3}`
@@ -43,9 +43,9 @@ green.oninput=e=> {
     let value=green.value
     greenValue.innerHTML=value
     hex2=parseInt(value,10).toString(16)
-    if(hex1==0) hex1="00"
-    if(hex2==0) hex2="00"
-    if (hex3==0) hex3="00"
+    if(hex1.length<2) hex1="00"
+    if(hex2.length<2) hex2="00"
+    if (hex3.length<2) hex3="00"
     mainResult.style.backgroundColor=`#${hex1}${hex2}${hex3}`
     gColor.style.backgroundColor=`#00${hex2}00`;
     HEXRsult.innerHTML=`#${hex1}${hex2}${hex3}`
@@ -56,9 +56,9 @@ blue.oninput=e=> {
     let value=blue.value
     blueValue.innerHTML=value
     hex3=parseInt(value,10).toString(16)
-    if(hex1==0) hex1="00"
-    if(hex2==0) hex2="00"
-    if (hex3==0) hex3="00"
+    if(hex1.length<2) hex1="00"
+    if(hex2.length<2) hex2="00"
+    if (hex3.length<2) hex3="00"
     mainResult.style.backgroundColor=`#${hex1}${hex2}${hex3}`
     bColor.style.backgroundColor=`#0000${hex3}`
     HEXRsult.innerHTML=`#${hex1}${hex2}${hex3}`
